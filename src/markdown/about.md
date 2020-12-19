@@ -6,7 +6,7 @@ title: "About My Silly Site"
 
 I came across Josh Comeau's blog awhile back and was quickly a big fan of his many articles.
 
-Will take the Gatsby #SillySiteChallenge as an opportunity to walk through his articles!
+Will take the Gatsby #SillySiteChallenge as an opportunity implement his many best practices.
 
 ### Goals
 
@@ -20,5 +20,6 @@ Will take the Gatsby #SillySiteChallenge as an opportunity to walk through his a
     <li>Accessible Animations, reduced motion and how to disable them. (Not applied to this site due to gatsby implications) </li>
   </ol>
 
+- [ ] use a component library for quick styling
 - [ ] [UseSound](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/)
 - [ ] [Toggling between light and dark mode](https://www.joshwcomeau.com/react/dark-mode/)
