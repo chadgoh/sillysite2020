@@ -2,7 +2,7 @@ import React from "react";
 import { animated } from "react-spring";
 import { useBoop } from "../hooks/use-boop";
 
-const Boop = ({ children, ...boopConfig }) => {
+const BoopHover = ({ children, ...boopConfig }) => {
   const [style, trigger] = useBoop(boopConfig);
 
   return (
@@ -12,4 +12,4 @@ const Boop = ({ children, ...boopConfig }) => {
   );
 };
 
-export default Boop;
+export default BoopHover;
