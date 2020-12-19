@@ -9,15 +9,23 @@ export default function Scream() {
     playbackRate,
     volume: 0.5,
   });
-  const handleClick = () => {
+  const increasePlaybackRate = () => {
     setPlaybackRate(playbackRate + 0.1);
     play();
   };
+
+  const reducePlaybackRate = () => {
+    setPlaybackRate(playbackRate - 0.1);
+    play();
+  };
   return (
-    <button onClick={handleClick}>
-      <span role="img" aria-label="Heart">
-        🐷
-      </span>
-    </button>
+    <div>
+      <button onClick={increasePlaybackRate}>
+        <span role="img" aria-label="Heart">
+          🐷
+        </span>
+      </button>
+      <button onClick={reducePlaybackRate}>👨</button>
+    </div>
   );
 }
