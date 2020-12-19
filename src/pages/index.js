@@ -5,7 +5,16 @@ import Boop from "../components/Boop";
 // markup
 const IndexPage = () => {
   return (
-    <div className="container" style={{ textAlign: "center" }}>
+    <div
+      className="container"
+      style={{
+        height: "100vh",
+        width: "100vw",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#B5EAD7",
+      }}>
       <div style={{ marginTop: "5rem" }}>
         <Boop rotation={20} timing={200}>
           <button>

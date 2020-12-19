@@ -6,11 +6,34 @@ const aboutTemplate = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <main style={{ maxWidth: "512", marginleft: "auto", marginRight: "auto" }}>
-      <Link to="/">← Back to home page</Link>
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
-    </main>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "25vw 75vw",
+      }}>
+      <div
+        style={{
+          display: "grid",
+          backgroundColor: "#FFDAC1",
+          height: "100vh",
+        }}>
+        <h1 style={{ alignSelf: "end" }}>{frontmatter.title}</h1>
+        <Link style={{ alignSelf: "start" }} to="/">
+          ← Back to home page
+        </Link>
+      </div>
+
+      <div
+        style={{
+          paddingLeft: "5rem",
+          display: "grid",
+          height: "100vh",
+          alignContent: "center",
+          backgroundColor: "#E2F0CB",
+        }}>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      </div>
+    </div>
   );
 };
 

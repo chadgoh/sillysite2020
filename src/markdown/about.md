@@ -11,12 +11,14 @@ Will take the Gatsby #SillySiteChallenge as an opportunity to walk through his a
 ### Goals
 
 - [x] [Hover Animations](https://www.joshwcomeau.com/react/boop/)
+
+  - **Learnings:**
+  <ol>
+    <li> Abstracting animations into individual components </li>
+    <li> Using React-Spring for animations</li>
+    <li> Decoupling the animation trigger area and animation area of the component with custom hooks </li>
+    <li>Accessible Animations, reduced motion and how to disable them. (Not applied to this site due to gatsby implications) </li>
+  </ol>
+
 - [ ] [UseSound](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/)
 - [ ] [Toggling between light and dark mode](https://www.joshwcomeau.com/react/dark-mode/)
-
-Things I've learnt:
-
-1. Abstracting animations into individual components
-2. Using React-Spring for animations
-3. Decoupling the animation trigger area and animation area of the component with custom hooks
-4. Accessible Animations, reduced motion and how to disable them. (Not applied to this site due to gatsby implications)
