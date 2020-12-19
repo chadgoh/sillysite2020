@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import Boop from "../components/Boop";
+import Scream from "../components/Scream";
 
 // markup
 const IndexPage = () => {
@@ -21,6 +22,7 @@ const IndexPage = () => {
             <Link to="/about"> About Page</Link>
           </button>
         </Boop>
+        <Scream />
       </div>
     </div>
   );
