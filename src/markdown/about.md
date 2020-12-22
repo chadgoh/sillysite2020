@@ -4,22 +4,22 @@ date: "2020-12-20"
 title: "About My Silly Site"
 ---
 
-I came across Josh Comeau's blog awhile back and was quickly a big fan of his many articles.
+Will take the Gatsby #SillySiteChallenge as an opportunity implement some of the articles that Josh Comeau has written on his [blog](https://www.joshwcomeau.com).
 
-Will take the Gatsby #SillySiteChallenge as an opportunity implement his many best practices.
-
-### Goals
+# Goals
 
 - [x] [Hover Animations](https://www.joshwcomeau.com/react/boop/)
-
-  - **Learnings:**
-  <ol>
-    <li> Abstracting animations into individual components </li>
-    <li> Using React-Spring for animations</li>
-    <li> Decoupling the animation trigger area and animation area of the component with custom hooks </li>
-    <li>Accessible Animations, reduced motion and how to disable them. (Not applied to this site due to gatsby implications) </li>
-  </ol>
-
 - [ ] use a component library for quick styling
 - [ ] [UseSound](https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/)
 - [ ] [Toggling between light and dark mode](https://www.joshwcomeau.com/react/dark-mode/)
+
+<br>
+<br>
+
+- **Learnings:**
+<ol>
+  <li> Abstracting animations into individual components </li>
+  <li> Using React-Spring for animations</li>
+  <li> Decoupling the animation trigger area and animation area of the component with custom hooks </li>
+  <li>Accessible Animations, reduced motion and how to disable them. (Not applied to this site due to gatsby implications) </li>
+</ol>
