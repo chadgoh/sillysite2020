@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import { Heading, IconButton, Link as ChakraLink } from "@chakra-ui/react";
+import { IconButton, Link as ChakraLink } from "@chakra-ui/react";
 import Scream from "../components/Scream";
 import sound from "../sounds/wilhemScream.mp3";
 import useSound from "use-sound";
@@ -8,6 +8,7 @@ import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
 import { FaPlus } from "@react-icons/all-files/fa/FaPlus";
 import { FaMinus } from "@react-icons/all-files/fa/FaMinus";
 import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
+import Navbar from "../components/Navbar";
 const IndexPage = () => {
   const [playbackRate, setPlaybackRate] = React.useState(0.5);
   const [play] = useSound(sound, {
@@ -35,7 +36,7 @@ const IndexPage = () => {
   };
   return (
     <>
-      <Heading color="red.500"> BeepBoopBeep </Heading>
+      <Navbar />
       <Grid
         templateColumns="repeat(5, 1fr)"
         templateRows="repeat(3, 1fr)"
