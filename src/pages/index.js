@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import { IconButton, Link as ChakraLink } from "@chakra-ui/react";
+import { Heading, IconButton, Link as ChakraLink } from "@chakra-ui/react";
 import Scream from "../components/Scream";
 import sound from "../sounds/wilhemScream.mp3";
 import useSound from "use-sound";
@@ -34,76 +34,79 @@ const IndexPage = () => {
     play();
   };
   return (
-    <Grid
-      templateColumns="repeat(5, 1fr)"
-      templateRows="repeat(3, 1fr)"
-      bg="gray.50"
-      h="100vh">
-      <GridItem
-        rowSpan={1}
-        colSpan={1}
-        colStart={3}
-        display="flex"
-        alignItems="center"
-        justifyContent="center">
-        <Center>
-          <Text fontSize="xl">
-            <ChakraLink color="red.500">
-              <Link to="/about"> About Page &rarr;</Link>
-            </ChakraLink>
-          </Text>
-        </Center>
-      </GridItem>
+    <>
+      <Heading color="red.500"> BeepBoopBeep </Heading>
+      <Grid
+        templateColumns="repeat(5, 1fr)"
+        templateRows="repeat(3, 1fr)"
+        bg="gray.50"
+        h="100vh">
+        <GridItem
+          rowSpan={1}
+          colSpan={1}
+          colStart={3}
+          display="flex"
+          alignItems="center"
+          justifyContent="center">
+          <Center>
+            <Text fontSize="xl">
+              <ChakraLink color="red.500">
+                <Link to="/about"> About Page &rarr;</Link>
+              </ChakraLink>
+            </Text>
+          </Center>
+        </GridItem>
 
-      <GridItem
-        rowSpan={1}
-        colSpan={1}
-        colStart={3}
-        display="flex"
-        alignItems="center"
-        justifyContent="center">
-        <Grid templateColumns="repeat(3,1fr)" templateRows="1fr, 1fr" gap={3}>
-          <GridItem>
-            <span onMouseDownCapture={increasePlaybackRate}>
-              <Scream>
-                <IconButton
-                  colorScheme="red"
-                  aria-label="Pig Button"
-                  icon={<GiPig />}
-                />
-              </Scream>
-            </span>
-          </GridItem>
-          <GridItem>
-            <span onMouseDownCapture={resetPlaybackRate}>
-              <Scream>
-                <IconButton
-                  colorScheme="red"
-                  aria-label="Man Button"
-                  icon={<ImMan />}
-                />
-              </Scream>
-            </span>
-          </GridItem>
-          <GridItem>
-            <span onMouseDownCapture={reducePlaybackRate}>
-              <Scream>
-                <IconButton
-                  colorScheme="red"
-                  aria-label="Monster Button"
-                  icon={<FaOptinMonster />}
-                />
-              </Scream>
-            </span>
-          </GridItem>
-          <GridItem rowStart={2} colSpan={3}>
-            <Center>
-              <Text fontSize="sm">Press for sounds!</Text>
-            </Center>
-          </GridItem>
-        </Grid>
-      </GridItem>
-    </Grid>
+        <GridItem
+          rowSpan={1}
+          colSpan={1}
+          colStart={3}
+          display="flex"
+          alignItems="center"
+          justifyContent="center">
+          <Grid templateColumns="repeat(3,1fr)" templateRows="1fr, 1fr" gap={3}>
+            <GridItem>
+              <span onMouseDownCapture={increasePlaybackRate}>
+                <Scream>
+                  <IconButton
+                    colorScheme="red"
+                    aria-label="Pig Button"
+                    icon={<GiPig />}
+                  />
+                </Scream>
+              </span>
+            </GridItem>
+            <GridItem>
+              <span onMouseDownCapture={resetPlaybackRate}>
+                <Scream>
+                  <IconButton
+                    colorScheme="red"
+                    aria-label="Man Button"
+                    icon={<ImMan />}
+                  />
+                </Scream>
+              </span>
+            </GridItem>
+            <GridItem>
+              <span onMouseDownCapture={reducePlaybackRate}>
+                <Scream>
+                  <IconButton
+                    colorScheme="red"
+                    aria-label="Monster Button"
+                    icon={<FaOptinMonster />}
+                  />
+                </Scream>
+              </span>
+            </GridItem>
+            <GridItem rowStart={2} colSpan={3}>
+              <Center>
+                <Text fontSize="sm">Press for sounds!</Text>
+              </Center>
+            </GridItem>
+          </Grid>
+        </GridItem>
+      </Grid>
+    </>
   );
 };
 
