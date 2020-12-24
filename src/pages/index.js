@@ -1,11 +1,6 @@
 import { Link } from "gatsby";
 import * as React from "react";
-import {
-  Container,
-  Flex,
-  IconButton,
-  Link as ChakraLink,
-} from "@chakra-ui/react";
+import { IconButton, Link as ChakraLink } from "@chakra-ui/react";
 import Scream from "../components/Scream";
 import sound from "../sounds/wilhemScream.mp3";
 import useSound from "use-sound";
