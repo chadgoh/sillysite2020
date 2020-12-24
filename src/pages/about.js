@@ -89,8 +89,8 @@ const AboutPage = () => {
               Notes:
             </Text>
             <Text fontSize="xs">
-              Not using Markdown files as ChakraUI's CSSReset seems to be
-              getting in the way <CgSmileSad />
+              Not using Markdown files as ChakraUI's CSSReset seemingly gets in
+              the way of Markdown styling <CgSmileSad />
             </Text>
           </Box>
         </GridItem>
