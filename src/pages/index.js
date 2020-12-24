@@ -42,7 +42,7 @@ const IndexPage = () => {
     <Grid
       templateColumns="repeat(5, 1fr)"
       templateRows="repeat(3, 1fr)"
-      bg="red.100"
+      bg="gray.50"
       h="100vh">
       <GridItem
         rowSpan={1}
@@ -53,7 +53,7 @@ const IndexPage = () => {
         justifyContent="center">
         <Center>
           <Text fontSize="xl">
-            <ChakraLink color="black">
+            <ChakraLink color="red.500">
               <Link to="/about"> About Page &rarr;</Link>
             </ChakraLink>
           </Text>
@@ -67,18 +67,26 @@ const IndexPage = () => {
         display="flex"
         alignItems="center"
         justifyContent="center">
-        <Grid templateColumns="repeat(3,1fr)" gap={3}>
+        <Grid templateColumns="repeat(3,1fr)" templateRows="1fr, 1fr" gap={3}>
           <GridItem>
             <span onMouseDownCapture={increasePlaybackRate}>
               <Scream>
-                <IconButton aria-label="Pig Button" icon={<GiPig />} />
+                <IconButton
+                  colorScheme="red"
+                  aria-label="Pig Button"
+                  icon={<GiPig />}
+                />
               </Scream>
             </span>
           </GridItem>
           <GridItem>
             <span onMouseDownCapture={resetPlaybackRate}>
               <Scream>
-                <IconButton aria-label="Man Button" icon={<ImMan />} />
+                <IconButton
+                  colorScheme="red"
+                  aria-label="Man Button"
+                  icon={<ImMan />}
+                />
               </Scream>
             </span>
           </GridItem>
@@ -86,32 +94,19 @@ const IndexPage = () => {
             <span onMouseDownCapture={reducePlaybackRate}>
               <Scream>
                 <IconButton
+                  colorScheme="red"
                   aria-label="Monster Button"
                   icon={<FaOptinMonster />}
                 />
               </Scream>
             </span>
           </GridItem>
+          <GridItem rowStart={2} colSpan={3}>
+            <Center>
+              <Text fontSize="sm">Press for sounds!</Text>
+            </Center>
+          </GridItem>
         </Grid>
-      </GridItem>
-
-      <GridItem
-        rowSpan={1}
-        colSpan={1}
-        colStart={3}
-        display="flex"
-        alignItems="center"
-        justifyContent="center">
-        <Center></Center>
-      </GridItem>
-      <GridItem
-        rowSpan={1}
-        colSpan={1}
-        colStart={4}
-        display="flex"
-        alignItems="center"
-        justifyContent="center">
-        <Center></Center>
       </GridItem>
     </Grid>
   );
