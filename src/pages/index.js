@@ -5,9 +5,9 @@ import Scream from "../components/Scream";
 import sound from "../sounds/wilhemScream.mp3";
 import useSound from "use-sound";
 import { Center, Grid, GridItem, Text } from "@chakra-ui/react";
-import { FaOptinMonster } from "@react-icons/all-files/fa/FaOptinMonster";
-import { ImMan } from "@react-icons/all-files/im/ImMan";
-import { GiPig } from "@react-icons/all-files/gi/GiPig";
+import { FaPlus } from "@react-icons/all-files/fa/FaPlus";
+import { FaMinus } from "@react-icons/all-files/fa/FaMinus";
+import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
 const IndexPage = () => {
   const [playbackRate, setPlaybackRate] = React.useState(0.5);
   const [play] = useSound(sound, {
@@ -70,8 +70,8 @@ const IndexPage = () => {
                 <Scream>
                   <IconButton
                     colorScheme="red"
-                    aria-label="Pig Button"
-                    icon={<GiPig />}
+                    aria-label="Minus Button"
+                    icon={<FaMinus />}
                   />
                 </Scream>
               </span>
@@ -81,8 +81,8 @@ const IndexPage = () => {
                 <Scream>
                   <IconButton
                     colorScheme="red"
-                    aria-label="Man Button"
-                    icon={<ImMan />}
+                    aria-label="Reset Button"
+                    icon={<VscDebugRestart />}
                   />
                 </Scream>
               </span>
@@ -92,8 +92,8 @@ const IndexPage = () => {
                 <Scream>
                   <IconButton
                     colorScheme="red"
-                    aria-label="Monster Button"
-                    icon={<FaOptinMonster />}
+                    aria-label="Plus Button"
+                    icon={<FaPlus />}
                   />
                 </Scream>
               </span>
@@ -101,6 +101,11 @@ const IndexPage = () => {
             <GridItem rowStart={2} colSpan={3}>
               <Center>
                 <Text fontSize="sm">Press for sounds!</Text>
+              </Center>
+            </GridItem>
+            <GridItem rowStart={3} colSpan={3}>
+              <Center textAlign="center">
+                <Text fontSize="xs">Buttons change playback rate</Text>
               </Center>
             </GridItem>
           </Grid>
